@@ -10,6 +10,8 @@ let R_BD = document.querySelector('.R_BD');
 let D_D_BD = document.querySelector('.D_D_BD');
 let T_D_BD = document.querySelector('.T_D_BD');
 
+let darkBtn = document.querySelector('.darkBtn');
+
 const calculatetor = (w, bd) => {
     D_C_W.innerText=w.todayCases;
     A_C_W.innerText=w.active;
@@ -22,6 +24,17 @@ const calculatetor = (w, bd) => {
     R_BD.innerText=bd.recovered;
     D_D_BD.innerText=bd.todayDeaths;
     T_D_BD.innerText=bd.deaths;
+}
+const darkTheme =( ) => {
+    let check=document.documentElement.getAttribute('data-theme');
+    if (check=="light") {
+        document.documentElement.setAttribute("data-theme", "dark");
+        darkBtn.querySelector('.fa-moon').classList.add("fas");
+    } else {
+        document.documentElement.setAttribute("data-theme", "light");
+        darkBtn.querySelector('.fa-moon').classList.add("far");
+
+    }
 }
 async function covidUpdate() {
     let fetching = await fetch('https://coronavirus-19-api.herokuapp.com/countries');

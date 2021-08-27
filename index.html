@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,18 @@
     <title>COVID19</title>
     <link rel="stylesheet" href="./bootstrap-grid.min.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+    <div class="darkBtn center" onclick="darkTheme()">
+        <i class="far fa-moon"></i>
+    </div>
     <div class="container">
         <div class="row" id='world'>
-            <div class="col-12 py-y shadow mt-5">
+            <div class="col-12 py-3 shadow mt-5">
                 <div class="row g-5">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="my-card py-3 px-2 gradi-2 radius-5">
@@ -20,7 +28,7 @@
                             <p class="center">Active Case (W)</p>
                             <div class="glass recover radius-5 center A_C_W">. . .</div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="my-card py-3 px-2 gradi-1 radius-5">
                             <h1 class="country center">World</h1>
@@ -49,7 +57,7 @@
                             <p class="center">Active Case BD</p>
                             <div class="glass recover radius-5 center A_C_BD">. . .</div>
                         </div>
-                    </div> 
+                    </div>
                     <div class="col-12 col-sm-12 col-md-6 col-lg-4">
                         <div class="my-card py-3 px-2 gradi-1 radius-5">
                             <h1 class="country center">BD</h1>
@@ -72,4 +80,5 @@
     <!-- ===== -->
     <script src="./app.js"></script>
 </body>
+
 </html>

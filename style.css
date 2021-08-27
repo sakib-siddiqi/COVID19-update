@@ -5,6 +5,7 @@
     letter-spacing: 0.08em;
     color: white;
     box-sizing: border-box;
+    transition: 0.15s;
 }
 :root{
     --bg:#DCEAFF;
@@ -14,6 +15,28 @@
     --glass:linear-gradient(86.69deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
     --title:14px;
     --shadow-1:-3px -4px 15px rgba(255, 255, 255, 0.4), 4px 4px 10px rgba(0, 0, 0, 0.05);
+    --dark:#01001A;
+}
+html[data-theme="light"]{
+    --bg:#DCEAFF;
+    --dark:#01001A;
+}
+html[data-theme="dark"]{
+    --bg: #001433;
+    --dark:#fcfcfc;
+    --shadow-1:-3px -4px 15px #ffffff10, 4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+.darkBtn{
+    background: var(--dark);
+    width: 30px;
+    height: 30px;
+    margin: 20px 0 0 20px;
+    border-radius: 1000px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.darkBtn i {
+    color: var(--bg);
 }
 body{
     min-height: 100vh;
