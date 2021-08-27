@@ -4,6 +4,7 @@
     font-weight: bold;
     letter-spacing: 0.08em;
     color: white;
+    box-sizing: border-box;
 }
 :root{
     --bg:#DCEAFF;
