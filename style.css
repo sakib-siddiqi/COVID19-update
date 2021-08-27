@@ -34,6 +34,8 @@ html[data-theme="dark"]{
     border-radius: 1000px;
     font-weight: bold;
     cursor: pointer;
+    border: none;
+    outline: none;
 }
 .darkBtn i {
     color: var(--bg);

@@ -30,9 +30,11 @@ const darkTheme =( ) => {
     if (check=="light") {
         document.documentElement.setAttribute("data-theme", "dark");
         darkBtn.querySelector('.fa-moon').classList.add("fas");
+        darkBtn.querySelector('.fa-moon').classList.remove("far");
     } else {
         document.documentElement.setAttribute("data-theme", "light");
         darkBtn.querySelector('.fa-moon').classList.add("far");
+        darkBtn.querySelector('.fa-moon').classList.remove("fas");
 
     }
 }
