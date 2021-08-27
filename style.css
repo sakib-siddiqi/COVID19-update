@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+*{  
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    color: white;
+}
+:root{
+    --bg:#DCEAFF;
+    --gradi-1:linear-gradient(59.95deg, #6085E6 0%, #6892FF 100%);
+    --gradi-2:linear-gradient(59.95deg, #864DFF 0%, #A074FF 100%);
+    --gradi-3:linear-gradient(59.95deg, #FF4040 0%, #FF7272 100%);
+    --glass:linear-gradient(86.69deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.2) 100%);
+    --title:14px;
+    --shadow-1:-3px -4px 15px rgba(255, 255, 255, 0.4), 4px 4px 10px rgba(0, 0, 0, 0.05);
+}
+body{
+    min-height: 100vh;
+    background: var(--bg);
+}
+.glass{
+    background: var(--glass);
+    font-size: 36px;
+    padding: 9px 24px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column{
+    flex-direction: column;
+}
+.row{
+    align-items: center !important;
+}
+.gradi-1{
+    background: var(--gradi-1);
+    box-shadow: 0px 10px 20px -5px #0035BE66;
+}
+.gradi-2{
+    background: var(--gradi-2);
+    box-shadow: 0px 10px 20px -5px #5808FE4D;
+}
+.gradi-3{
+    background: var(--gradi-3);
+    box-shadow: 0px 10px 20px -5px #FC00004A;
+}
+.radius-5{
+    border-radius: 5px;
+}
+.country{
+    font-size: 36px;
+}
+.shadow{
+    box-shadow: var(--shadow-1);
+}
